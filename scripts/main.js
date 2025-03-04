@@ -1,11 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script loaded and DOM content fully loaded');
     const canvas = document.getElementById('gameCanvas');
+    console.log('Canvas:', canvas);
     const ctx = canvas.getContext('2d');
+    console.log('Context:', ctx);
     const playButton = document.getElementById('playButton');
+    console.log('Play Button:', playButton);
     const instructionsButton = document.getElementById('instructionsButton');
+    console.log('Instructions Button:', instructionsButton);
     const creditsButton = document.getElementById('creditsButton');
+    console.log('Credits Button:', creditsButton);
     const restartButton = document.getElementById('restartButton');
+    console.log('Restart Button:', restartButton);
 
     // Set canvas dimensions
     function resizeCanvas() {
