@@ -35,6 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let player2Score = 0;
     let gameOver = false;
 
+    console.log('Initial player1Y:', player1Y);
+    console.log('Initial player2Y:', player2Y);
+    console.log('Initial ballX:', ballX);
+    console.log('Initial ballY:', ballY);
+    console.log('Initial ballSpeedX:', ballSpeedX);
+    console.log('Initial ballSpeedY:', ballSpeedY);
+    console.log('Initial player1Score:', player1Score);
+    console.log('Initial player2Score:', player2Score);
+    console.log('Initial gameOver:', gameOver);
+
     // Event listeners for buttons
     playButton.addEventListener('click', () => {
         console.log('Play button clicked');
@@ -70,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 player2Y = Math.min(player2Y + 20, canvas.height - paddleHeight);
                 break;
         }
+        console.log('player1Y:', player1Y);
+        console.log('player2Y:', player2Y);
     });
 
     function startGame() {
