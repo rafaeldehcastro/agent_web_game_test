@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script loaded and DOM content fully loaded');
     const { motion } = window['framer-motion'];
     const canvas = document.getElementById('gameCanvas');
     const ctx = canvas.getContext('2d');
@@ -30,10 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameOver = false;
 
     // Event listeners for buttons
-    playButton.addEventListener('click', startGame);
-    instructionsButton.addEventListener('click', showInstructions);
-    creditsButton.addEventListener('click', showCredits);
-    restartButton.addEventListener('click', startGame);
+    playButton.addEventListener('click', () => {
+        console.log('Play button clicked');
+        startGame();
+    });
+    instructionsButton.addEventListener('click', () => {
+        console.log('Instructions button clicked');
+        showInstructions();
+    });
+    creditsButton.addEventListener('click', () => {
+        console.log('Credits button clicked');
+        showCredits();
+    });
+    restartButton.addEventListener('click', () => {
+        console.log('Restart button clicked');
+        startGame();
+    });
 
     // Paddle controls
     document.addEventListener('keydown', (e) => {
