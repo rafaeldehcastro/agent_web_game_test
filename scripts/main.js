@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script loaded and DOM content fully loaded');
-    const { motion } = window['framer-motion'];
     const canvas = document.getElementById('gameCanvas');
     const ctx = canvas.getContext('2d');
     const playButton = document.getElementById('playButton');
@@ -158,9 +157,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start the game loop
     gameLoop();
-
-    // Animate buttons
-    motion.animate(playButton, { scale: 1.1 }, { duration: 0.5, repeat: Infinity, repeatType: 'reverse' });
-    motion.animate(instructionsButton, { scale: 1.1 }, { duration: 0.5, repeat: Infinity, repeatType: 'reverse' });
-    motion.animate(creditsButton, { scale: 1.1 }, { duration: 0.5, repeat: Infinity, repeatType: 'reverse' });
 });
