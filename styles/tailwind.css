@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-900 text-white;
+}
+
+#gameCanvas {
+    @apply border border-gray-700;
+}
+
+button {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+#playButton {
+    @apply bg-blue-500 hover:bg-blue-700;
+}
+
+#instructionsButton {
+    @apply bg-green-500 hover:bg-green-700 mt-4;
+}
+
+#creditsButton {
+    @apply bg-purple-500 hover:bg-purple-700 mt-4;
+}

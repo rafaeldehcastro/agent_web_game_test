@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFAPONG</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/4.1.17/framer-motion.umd.min.js"></script>
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <h1 class="text-4xl font-bold mb-8">RAFAPONG</h1>
+        <canvas id="gameCanvas" class="border border-gray-700"></canvas>
+        <div id="menu" class="mt-8">
+            <button id="playButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Play</button>
+            <button id="instructionsButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Instructions</button>
+            <button id="creditsButton" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-4">Credits</button>
+        </div>
+        <div id="gameOverScreen" class="hidden flex-col items-center justify-center min-h-screen">
+            <h2 class="text-3xl font-bold mb-4">Game Over</h2>
+            <button id="restartButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
